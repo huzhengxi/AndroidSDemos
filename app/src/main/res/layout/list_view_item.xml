@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:src="@mipmap/profile1" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/profile"
+        android:text="用户1"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/nickname"
+        android:layout_toEndOf="@id/profile"
+        android:text="2048-10-24"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:layout_margin="5dp"
+        android:text="啊， 多么有意义的日子啊，是在太意义了。哈哈哈。。"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/repost"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:src="@mipmap/repost" />
+
+    <ImageView
+        android:id="@+id/comment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/content"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/repost"
+        android:src="@mipmap/comment" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/content"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/comment"
+        android:src="@mipmap/like" />
+
+</RelativeLayout>
