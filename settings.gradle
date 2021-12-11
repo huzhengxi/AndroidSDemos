@@ -10,3 +10,6 @@ rootProject.name = "AndroidStudyDemos"
 include ':app'
 include ':viewpagedemo'
 include ':viewpagemodel2'
+include ':servicedemo2'
+include ':providerdemo'
+include ':animationdemo'
