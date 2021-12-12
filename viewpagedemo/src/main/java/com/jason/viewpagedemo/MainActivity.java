@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.item, parent, false);
 
+
                 return new ViewHolder(view);
             }
 
@@ -65,5 +66,6 @@ public class MainActivity extends AppCompatActivity {
             super(itemView);
             this.container = itemView.findViewById(R.id.container);
         }
+
     }
 }

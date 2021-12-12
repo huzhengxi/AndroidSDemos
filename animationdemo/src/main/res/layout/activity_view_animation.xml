@@ -8,9 +8,9 @@
     tools:context=".view.ViewAnimationActivity">
 
     <LinearLayout
-        android:background="@drawable/edge"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:background="@drawable/edge"
         android:orientation="vertical">
 
         <TextView
@@ -30,9 +30,16 @@
 
         <Button
             android:id="@+id/id_btn_translate"
-            android:layout_width="wrap_content"
+            android:layout_width ="wrap_content"
             android:layout_height="wrap_content"
             android:text="平移" />
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/id_btn_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转动画" />
     </LinearLayout>
 
 </LinearLayout>
