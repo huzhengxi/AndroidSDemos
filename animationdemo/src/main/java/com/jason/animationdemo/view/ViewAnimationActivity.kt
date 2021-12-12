@@ -3,8 +3,10 @@ package com.jason.animationdemo.view
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.view.animation.LinearInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import com.jason.animationdemo.R
 import kotlinx.android.synthetic.main.activity_view_animation.*
@@ -45,5 +47,22 @@ class ViewAnimationActivity : AppCompatActivity() {
         id_btn_rotate.setOnClickListener {
             id_btn_rotate.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate))
         }
+
+        id_btn_set.setOnClickListener {
+            id_btn_set.startAnimation(AnimationUtils.loadAnimation(this, R.anim.set))
+        }
+        id_view_accelerate.setOnClickListener { compareAnimation() }
+        id_view_linear.setOnClickListener { compareAnimation() }
+    }
+
+    private fun compareAnimation() {
+        val accelerateAnimation = AnimationUtils.loadAnimation(this, R.anim.translate);
+        val linearAnimation = AnimationUtils.loadAnimation(this, R.anim.translate);
+
+        accelerateAnimation.interpolator = AccelerateDecelerateInterpolator()
+        linearAnimation.interpolator = LinearInterpolator()
+
+        id_view_accelerate.startAnimation(accelerateAnimation)
+        id_view_linear.startAnimation(linearAnimation)
     }
 }

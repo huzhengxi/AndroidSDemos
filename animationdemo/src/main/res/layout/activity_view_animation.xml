@@ -13,6 +13,21 @@
         android:background="@drawable/edge"
         android:orientation="vertical">
 
+        <View
+            android:id="@+id/id_view_accelerate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@color/purple_700" />
+
+        <View
+            android:id="@+id/id_view_linear"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:alpha="0.5"
+            android:background="@color/purple_700" />
+
         <TextView
             android:id="@+id/id_txt_alpha"
             android:layout_width="50dp"
@@ -30,16 +45,22 @@
 
         <Button
             android:id="@+id/id_btn_translate"
-            android:layout_width ="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="平移" />
 
         <Button
-            android:layout_gravity="center_horizontal"
             android:id="@+id/id_btn_rotate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="旋转动画" />
+
+        <Button
+            android:id="@+id/id_btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set" />
     </LinearLayout>
 
 </LinearLayout>
