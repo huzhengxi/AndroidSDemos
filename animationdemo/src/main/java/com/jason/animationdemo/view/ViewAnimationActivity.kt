@@ -10,6 +10,7 @@ import android.view.animation.LinearInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import com.jason.animationdemo.R
 import kotlinx.android.synthetic.main.activity_view_animation.*
+import org.jetbrains.anko.toast
 
 class ViewAnimationActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -40,6 +41,9 @@ class ViewAnimationActivity : AppCompatActivity() {
             id_btn_scale.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale))
         }
 
+        id_btn_scale_size.setOnClickListener {
+            toast("" + id_btn_scale.width + ", height:" + id_btn_scale.height)
+        }
         id_btn_translate.setOnClickListener {
             id_btn_translate.startAnimation(AnimationUtils.loadAnimation(this, R.anim.translate))
         }

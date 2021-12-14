@@ -42,6 +42,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="拉升" />
+        <Button
+            android:id="@+id/id_btn_scale_size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="拉升按钮的宽度和高度" />
 
         <Button
             android:id="@+id/id_btn_translate"

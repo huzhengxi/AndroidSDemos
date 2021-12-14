@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudyDemos">
         <activity
+            android:name=".transitions.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".transitions.FirstActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ViewAnimationActivity"
             android:exported="false" />
         <activity
